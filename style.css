@@ -3,8 +3,8 @@
 body {
   margin: 30px;
   padding: 10px;
-  border: 3px solid #D4AF37;
-background-color: #EEEEEE;
+  border: 3px solid #C4A27B;
+background-color: #FCFCFD;
 }
 
 ul {
@@ -13,24 +13,24 @@ ul {
 }
 
 #title {
-  color: #4E4E4E;
+  color: #5B5B5B;
   margin-bottom: 1.5em;
 }
 
 #ingredients {
-  color: #D4AF37;
+  color: #C4A27B;
   font-size: 18px;
   letter-spacing: 3px;
 }
 
 .items {
-  color: #4E4E4E;
+  color: #868686;
   font-family: monospace;
   line-height: 1.7em;
 }
 
 #footer {
-  color: #D4AF37;
+  color: #C4A27B;
   font-size: 9px;
   letter-spacing: 2px;
   text-decoration: none;
