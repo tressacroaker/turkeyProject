@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="customDirs">
+  <head>
+    <meta charset="utf-8">
+    <title>Custom Directives</title>
+    <link rel="stylesheet" href="/css/master.css"
+  </head>
+  <body ng-controller="mainCtrl">
+
+
+{{test}}
+ <main-dir></main-dir>
+ <!-- we want to repeat this thing over again for no reason then copy and paste it. instead of re creating all of the div stuff in the mainDir page, then it will be nice to use on multiple views. repeated directives are that example for nicks page the need a quote page ex. -->
+ <main-dir></main-dir>
+ <main-dir></main-dir>
+ <main-dir></main-dir>
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script> -->
+<script src="app.js"></script>
+<script src="mainCtrl.js"></script>
+<script src="mainServ.js"></script>
+<script src="styles.css"></script>
+<script src="mainDir.js"></script>
+<script src="dirCtrl.js"></script>
+  </body>
+</html>
