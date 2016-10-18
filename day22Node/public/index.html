@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="beerApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body ng-controller="mainCtrl">
+  <header>
+    <h1> This is my beer app </h1>
+  </header>
+<hr>
+<button type="button"  ng-click="getBeer()">GET the beer</button>
+<!-- nothing will show up until we click get this beer -->
+<form ng-submit="postNewBeer(newBeer)">
+  <input type="text" ng-model="newBeer.name" placeholder="Add New Beer Name Here">
+<!-- this will be a an object with the key of name -->
+</form>
+<div ng-repeat="oneBeer in allTheBeers">
+<h2>
+  <span ng-dblclick="readyToUpdate = true" ng-hide="readyToUpdate">{{oneBeer.name}}</span>
+  <!-- created a span so it doesnt chagne any styles or the way that it looks but we are going to add something over it so that if we click it will change it -->
+  <!-- readyToUpdate is random name so we can use ng show and ng hide -->
+  <form ng-show="readyToUpdate" ng-submit="putTheBeer(oneBeer)">
+      <input type="text" ng-model="oneBeer.name">
+  </form>
+  <button ng-hide="readyToUpdate" type="button" ng-click = "deleteTheBeer(oneBeer)">Drink the Beer</button>
+</h2>
+</div>
+
+
+
+<script src="app.js"></script>
+<script src="mainCtrl.js"></script>
+<script src="mainServ.js"></script>
+
+  </body>
+</html>

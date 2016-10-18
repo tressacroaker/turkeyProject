@@ -1,0 +1,51 @@
+body {
+  background-image: url("https://unsplash.com/search/beer?photo=LnBisJEyVFE");
+background-size: cover;
+min-height: 100vh;
+background-position: center;
+font-family: sans-serif;
+}
+
+button {
+  padding: 8px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+
+hr {
+  border: 1px solid #fff;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 2px 2px #000;
+}
+h2 {
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 2px 2px #000;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+h1 , h3, button, body {
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}

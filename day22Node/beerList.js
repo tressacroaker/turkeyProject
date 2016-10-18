@@ -1,4 +1,5 @@
-var beerList = [{
+module.exports = [
+  {
   name:"Molson",
   key: 1
 }, {
